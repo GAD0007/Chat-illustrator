@@ -1,6 +1,6 @@
 .bg-gradient::before{
     content: "";
-    height: 650px;
+    height: 580px;
     width: 25vw;
     background-image: linear-gradient(10deg,hsl(264, 100%, 61%), hsl(293, 100%, 63%));
     border-bottom-left-radius:20rem;
@@ -45,14 +45,26 @@
     box-shadow: 10px 20px 50px -2px rgba(0, 0, 0, 0.5);
     margin-left: 13vw;
     padding: 10px;
-    opacity: 0;
+     opacity: 0;
     transform: translateY(100%);
     animation-name: fadeIn;
     animation-duration: 3s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
     transition: transform 3s ease;
+    transform: translateY(-50%);
+   
 }
+/*animation for chat-box fadeIn  
+ opacity: 0;
+    transform: translateY(100%);
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    transition: transform 3s ease;
+    transform: translateY(-50%);
+*/
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -64,9 +76,7 @@
     }
   }
   
-  .chatbox {
-    transform: translateY(-50%);
-  }
+
 .chat-bg{
     width: 100%;
     height: 100%;
@@ -87,6 +97,15 @@
     animation-fill-mode: forwards;
     transition: transform 1s ease;
 }
+/*animation for text-box fadeOn  
+ opacity: 0;
+    transform: translateX(100%);
+    animation-name: fadeOn;
+    animation-duration: 3.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    transition: transform 1s ease;
+*/
   
   @keyframes fadeOn {
     from {
@@ -225,7 +244,7 @@
 body{
    margin: 0px;
    overflow-x: hidden;
-   background-color:#e9e7eb!important;
+   background-color:#f4edfc!important;
 }
 .simple-booking{
     font-size: 2rem;
@@ -248,7 +267,7 @@ svg.left-arrow{
   fill: white;
 }
 .user-img{
-    width: 10%;
+    width: 11%;
     height: 10%;
     position: relative;
     left: 12%;
@@ -403,7 +422,7 @@ svg.left-arrow{
         border-bottom-left-radius:10px;
         border-bottom-right-radius:10px;
         width: 100%;
-        height: 12%;  
+        height: 13%;  
         position: relative;
     
     }
@@ -416,12 +435,19 @@ svg.left-arrow{
         left: 25%;
         border-bottom-left-radius:0.7rem;
         border-bottom-right-radius:0.7rem;
-        bottom: 50px;
+        bottom: 53px;
     }
     .user-profile{
         display: flex;
-        padding-top: 35px;
+        padding-top: 30px;
         width: 100%;
+    }
+    .name{
+        line-height: 1px;
+        letter-spacing: 1px;
+        position: absolute;
+        left: 27%;
+        top: 65%;
     }
     .chat-message{
         background-color:#e0e0e0;
@@ -437,7 +463,7 @@ svg.left-arrow{
         letter-spacing: 1px;
     }
     .chat-message-in{
-        background-color:#e0e0e0;
+        background-color:#ffffff;
         min-width: 55%;
         height:auto;
         border-radius: 0.7rem;
@@ -448,7 +474,7 @@ svg.left-arrow{
         letter-spacing: 1px;
     }
     .chat-message-in-2{
-        background-color:#e0e0e0;
+        background-color:#ffffff;
         min-width: 40%;
         height:auto;
         border-radius: 0.7rem;
@@ -521,9 +547,14 @@ svg.left-arrow{
         margin-top: 80px;
         opacity: 1;
         transform: none;
-        animation-name: none;
-      
-        
+        animation-name: none;    
+    }
+    .name{
+        line-height: 1px;
+        letter-spacing: 1px;
+        position: absolute;
+        left: 27%;
+        top: 60%;
     }
     .texted{
         width: 100%;
@@ -558,18 +589,30 @@ svg.left-arrow{
         content: "";
         position: absolute;
         width: 50%;
-        height: 30px;
+        height: 20px;
         background-color: white;
         left: 25%;
         border-bottom-left-radius:0.7rem;
         border-bottom-right-radius:0.7rem;
-        bottom: 53px;
+        bottom: 60px;
     }
     .user-img{
-        width: 10%;
+        width: 11%;
         height: 10%;
         position: relative;
-        left: 14%;
+        left: 13%;
+    }
+    .name{
+        line-height: 1px;
+        letter-spacing: 1px;
+        position: absolute;
+        left: 30%;
+        top: 65%;
+    }
+    .user-profile{
+        display: flex;
+        padding-top: 35px;
+        width: 100%;
     }
     .chat-message{
         background-color:#e0e0e0;
@@ -585,7 +628,7 @@ svg.left-arrow{
         letter-spacing: 1px;
     }
     .chat-message-in{
-        background-color:#e0e0e0;
+        background-color:#ffffff;
         width: 55%;
         height:auto;
         border-radius: 0.7rem;
@@ -596,7 +639,7 @@ svg.left-arrow{
         letter-spacing: 1px;
     }
     .chat-message-in-2{
-        background-color:#e0e0e0;
+        background-color:#ffffff;
         width: 40%;
         height:auto;
         border-radius: 0.7rem;
