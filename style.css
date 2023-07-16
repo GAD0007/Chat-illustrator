@@ -502,7 +502,7 @@ svg.left-arrow {
 @media screen and (max-width: 599px) {
   .chatbox {
     max-width: 280px;
-    height: 570px;
+    height: 100%;
     background-color: rgb(255, 255, 255);
     border-radius: 27px;
     margin-top: 30px;
